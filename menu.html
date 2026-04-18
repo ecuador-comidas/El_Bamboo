@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú</title>
+
+<style>
+:root {
+  --verde: #6DBE2E;
+  --verde-oscuro: #3A6B10;
+  --verde-claro: #A8D96B;
+  --crema: #F4F0E6;
+  --tierra2: #1A1C12;
+  --blanco: #FAFAF5;
+}
+
+body{
+  font-family:"Outfit",sans-serif;
+  color:var(--crema);
+  overflow-x:hidden;
+  background: radial-gradient(circle at center, rgba(109,190,46,0.15) 0%, rgba(26,28,18,1) 70%),
+              linear-gradient(135deg, var(--verde-oscuro), var(--tierra2));
+}
+
+/* hojas */
+.particles{
+  position:fixed;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+}
+
+.leaf{
+  position:absolute;
+  animation:leafFall linear infinite;
+  border-radius:50% 0 50% 0;
+}
+
+@keyframes leafFall{
+  0%{transform:translateY(-20px);opacity:0}
+  10%{opacity:0.6}
+  100%{transform:translateY(100vh) rotate(720deg);opacity:0}
+}
+
+/* layout */
+.menu-container{
+  max-width:1200px;
+  margin:auto;
+  padding:4rem 2rem;
+}
+
+.menu-title{
+  text-align:center;
+  margin-bottom:2rem;
+}
+
+.menu-title h1{
+  font-family:"Playfair Display",serif;
+  font-size:40px;
+}
+
+.menu-title span{
+  color:var(--verde);
+}
+
+/* ===== BOTONES ===== */
+.menu-filtros{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  margin-bottom:2rem;
+  flex-wrap:wrap;
+}
+
+.filtro-btn{
+  padding:0.6rem 1.5rem;
+  border:none;
+  border-radius:30px;
+  background:rgba(255,255,255,0.1);
+  color:#fff;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.filtro-btn.active,
+.filtro-btn:hover{
+  background:var(--verde);
+  color:#000;
+}
+
+/* grid */
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:1.5rem;
+}
+
+/* cards */
+.menu-card{
+  position:relative;
+  border-radius:16px;
+  overflow:hidden;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.menu-card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  transition:0.4s;
+}
+
+.menu-card:hover img{
+  transform:scale(1.1);
+}
+
+/* animación filtro */
+.menu-card.hide{
+  opacity:0;
+  transform:scale(0.8);
+  pointer-events:none;
+  position:absolute;
+}
+
+.menu-card.show{
+  opacity:1;
+  transform:scale(1);
+  position:relative;
+}
+
+.menu-label{
+  position:absolute;
+  bottom:10px;
+  left:10px;
+  color:#fff;
+  font-weight:bold;
+}
+
+/* ===== MODAL ===== */
+.img-modal{
+  display:none;
+  position:fixed;
+  z-index:999;
+  inset:0;
+  background:rgba(0,0,0,0.9);
+}
+
+.img-modal-content{
+  display:block;
+  margin:auto;
+  max-width:90%;
+  max-height:80vh;
+  margin-top:5%;
+  border-radius:12px;
+}
+
+.img-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:#fff;
+  cursor:pointer;
+}
+
+.img-close:hover{
+  color:var(--verde);
+}
+
+#imgCaption{
+  text-align:center;
+  margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="particles" id="particles"></div>
+
+<div class="menu-container">
+
+  <div class="menu-title">
+    <h1>Nuestro <span>Menú</span></h1>
+  </div>
+
+  <!-- BOTONES -->
+  <div class="menu-filtros">
+    <button class="filtro-btn active" data-filter="all">Todo</button>
+    <button class="filtro-btn" data-filter="comidas">Comidas</button>
+    <button class="filtro-btn" data-filter="bebidas">Bebidas y Snacks</button>
+    <button class="filtro-btn" data-filter="helados">Helados y Copas</button>
+    <button class="filtro-btn" data-filter="frapuchinos">Frapuchinos</button>
+    <button class="filtro-btn" data-filter="micheladas">Micheladas</button>
+    <button class="filtro-btn" data-filter="cocteles">Cocteles</button>
+  </div>
+
+  <div class="menu-grid">
+
+
+    <!--micheladas-->
+    <div class="menu-card micheladas show">
+      <img src="img/micheladas.jpeg">
+      <div class="menu-label">Micheladas</div>
+    </div>
+
+    <!--cocteles-->
+    <div class="menu-card cocteles show">
+      <img src="img/cocteles.jpeg">
+      <div class="menu-label">cocteles</div>
+    </div>
+
+    <!--comidas-->
+    <div class="menu-card comidas show">
+      <img src="img/img 3.jpeg">
+      <div class="menu-label">Platos fuertes</div>
+    </div>
+
+    <!--helados y copas-->
+    <div class="menu-card helados show">
+      <img src="img/img 1.jpeg">
+      <div class="menu-label">Helados y copas</div>
+    </div>
+
+    <div class="menu-card helados show">
+      <img src="img/img 3.jpeg">
+      <div class="menu-label">Helados y copas</div>
+    </div>
+
+    <!--bebidas y snacks-->
+    <div class="menu-card bebidas show">
+      <img src="img/img 2.jpeg">
+      <div class="menu-label">bebidas y snacks</div>
+    </div>
+
+    <!--frapuchinos-->
+    <div class="menu-card frapuchinos show">
+      <img src="img/frapuchinos.jpeg">
+      <div class="menu-label">Frapuchinos</div>
+    </div>
+
+
+
+  </div>
+</div>
+
+<!-- MODAL -->
+<div id="imgModal" class="img-modal">
+  <span class="img-close">&times;</span>
+  <img id="imgModalSrc" class="img-modal-content">
+  <div id="imgCaption"></div>
+</div>
+
+<script>
+/* hojas */
+const particles=document.getElementById("particles");
+for(let i=0;i<25;i++){
+  const l=document.createElement("div");
+  l.classList.add("leaf");
+  l.style.cssText=`
+    left:${Math.random()*100}%;
+    animation-duration:${8+Math.random()*12}s;
+    width:${6+Math.random()*10}px;
+    height:${6+Math.random()*10}px;
+    background:hsl(${80+Math.random()*40},60%,40%);
+  `;
+  particles.appendChild(l);
+}
+
+/* modal */
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("imgModalSrc");
+const captionText = document.getElementById("imgCaption");
+
+document.querySelectorAll(".menu-card").forEach(card => {
+  card.addEventListener("click", function(){
+    const img = this.querySelector("img");
+    const label = this.querySelector(".menu-label");
+
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerText = label.innerText;
+  });
+});
+
+document.querySelector(".img-close").onclick = () => modal.style.display="none";
+
+modal.onclick = (e)=>{
+  if(e.target === modal) modal.style.display="none";
+};
+
+/* FILTRO CON ANIMACIÓN */
+const botones = document.querySelectorAll(".filtro-btn");
+const cards = document.querySelectorAll(".menu-card");
+
+botones.forEach(btn=>{
+  btn.addEventListener("click",()=>{
+
+    botones.forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const filtro = btn.dataset.filter;
+
+    cards.forEach(card=>{
+      if(filtro==="all" || card.classList.contains(filtro)){
+        card.classList.remove("hide");
+        card.classList.add("show");
+      }else{
+        card.classList.remove("show");
+        card.classList.add("hide");
+      }
+    });
+
+  });
+});
+</script>
+
+</body>
+</html>

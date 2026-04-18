@@ -148,6 +148,24 @@ footer{background:var(--tierra2);border-top:1px solid rgba(109,190,46,0.15);padd
   .ubicacion-layout{grid-template-columns:1fr}
   footer{padding:2rem 1.5rem}
 }
+.red-ig{
+  background: rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.2);
+  color:white;
+  transition: all 0.3s;
+}
+
+.red-ig:hover{
+  background: linear-gradient(45deg, 
+    #f58529, 
+    #dd2a7b, 
+    #8134af, 
+    #515bd4
+  );
+  color:#fff;
+  border-color:transparent;
+  transform: translateY(-3px);
+}
 </style>
 </head>
 <body>
@@ -260,435 +278,27 @@ footer{background:var(--tierra2);border-top:1px solid rgba(109,190,46,0.15);padd
     <div style="width:60px;height:3px;background:linear-gradient(to right,var(--verde),var(--verde-claro));border-radius:2px;margin:1rem auto 0"></div>
   </div>
 
-<div style="max-width:1100px;margin:0 auto;padding:0 4rem 6rem;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between">
+  <div style="max-width:1100px;margin:0 auto;padding:0 4rem 6rem;display:flex;justify-content:center;align-items:center">
+
+    <a href="menu.html" target="_blank"
+       style="
+         background:linear-gradient(135deg,var(--verde),var(--verde-claro));
+         color:#fff;
+         font-size:18px;
+         font-weight:700;
+         padding:1.2rem 2.5rem;
+         border-radius:50px;
+         text-decoration:none;
+         box-shadow:0 10px 25px rgba(0,0,0,0.3);
+         transition:all 0.3s ease;
+         display:inline-block;
+       "
+       onmouseover="this.style.transform='scale(1.05)';this.style.boxShadow='0 15px 30px rgba(0,0,0,0.4)'"
+       onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 10px 25px rgba(0,0,0,0.3)'"
+    >
+      VER TODO EL MENÚ – PRESIONA AQUÍ
+    </a>
 
-    <!-- CATEGORÍA: CÓCTELES -->
-<div style="flex:1 1 300px;min-width:300px">
-
-  <h3 style="font-family:'Playfair Display',serif;font-size:28px;color:var(--verde-claro);margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(109,190,46,0.2)">
-    HELADOS Y COPAS
-  </h3>
-
-  <div style="display:grid;grid-template-columns:1fr;gap:1.25rem;margin-bottom:3rem">
-    
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          HELADO EN CONO SIMPLE
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Elije 1 sabor favorito de helado mas jarabe y topping
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $1.00
-      </div>
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          HELADO EN CONO DOBLE
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Elije 2 sabores favoritos de helado mas jarabe y topping
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $1.75
-      </div>
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          HELADO MEDIUM
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Elije 3 sabores favoritos de helado mas jarabe y topping
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $2.50
-      </div>
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          BANANA SPLIT
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Elije 3 sabores favoritos de helado, crema chantilly, jarabe, cereza
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $3.00
-      </div>
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          PIÑA HAWAIANA
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Elije 3 sabores favoritos de helado, galleta, barquillos, gomitas, cereza
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $3.75
-      </div>
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          COPA OREO
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Helado de oreo, mas galleta oreo, crema, jarabe de chocolate
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $3.00
-      </div>
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          HELADO CON QUESO
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Elije 2 sabores favoritos de helado mas queso y jarabe
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $2.50
-      </div>
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          HELADO POLLITO
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Elije 2 sabores favoritos de helado mas gomitas y grajeas
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $2.50
-      </div>
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          HELADO GUSANITO
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Elije 3 sabores favoritos de helado mas gomitas y grajeas
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $3.00
-      </div>
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          HELADO RATONCITO
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Helado devainilla, crema, galleta oreo, jarabe
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $2.50
-      </div>
-    </div>
-
-  </div>
-</div>
-
-    <!-- CATEGORÍA: MICHELADAS -->
-<div style="flex:1 1 300px;min-width:300px">
-
-  <h3 style="font-family:'Playfair Display',serif;font-size:28px;color:var(--verde-claro);margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(109,190,46,0.2)">
-    BEBIDAS Y SNACKS
-  </h3>
-
-  <div style="display:grid;grid-template-columns:1fr;gap:1.25rem;margin-bottom:3rem">
-    
-<!-- ITEM -->
-<div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-  onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-  onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-  <!-- TEXTO -->
-  <div>
-    <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-      BATIDOS
-    </div>
-    <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-      Elige el sabor de la fruta de tu preferencia. Elige tu base: agua o leche 
-    </div>
-  </div>
-
-  <!-- PRECIOS -->
-  <div style="display:flex; flex-direction:column; gap:5px;">
-    <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;">
-      PEQUEÑO: $1.00
-    </div>
-    <br>
-    <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;">
-      GRANDE: $1.75
-    </div>
-  </div>
-
-</div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          TOSTADA SIMPLE
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Pan artesanal tostado con mantequilla, relleno de queso o jamon
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $0.75
-      </div>
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          TOSTADA MIXTA
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Pan artesanal tostado con mantequilla, relleno de queso y jamon
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $1.00
-      </div>
-    </div>
-
-  </div>
-</div>
-
-    <!-- CATEGORÍA: COMIDAS -->
-<div style="flex:1 1 300px;min-width:300px">
-
-  <h3 style="font-family:'Playfair Display',serif;font-size:28px;color:var(--verde-claro);margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(109,190,46,0.2)">
-    FRAPUCHINOS
-  </h3>
-
-  <div style="display:grid;grid-template-columns:1fr;gap:1.25rem;margin-bottom:3rem">
-    
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          CHOCOLATE
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Elaborado con una base de helado de chocolate, leche y hielo granizado
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $3.00
-      </div>
-
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          OREO
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Elaborado con una base de helado de vainilla, galleta oreo, leche, hielo granizado
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $3.00
-      </div>
-
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          CAFÉ
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Elaborado con una base de helado de vainilla, leche, hielo y un shot de café
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $3.00
-      </div>
-
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          MOKA
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Elaborado con base de helado de chocolate, leche, hielo y un shot de café
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $3.00
-      </div>
-
-    </div>
-
-    <!-- ITEM -->
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          COCO
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Elaborado con base de helado de coco, leche, hielo y un shot de café
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $3.00
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
-
-    <!-- CATEGORÍA: EXTRA — puedes duplicar esta sección para más categorías -->
-<!--
-<div style="flex:1 1 300px;min-width:300px">
-
-  <h3 style="font-family:'Playfair Display',serif;font-size:28px;color:var(--verde-claro);margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(109,190,46,0.2)">
-    Cócteles
-  </h3>
-
-  <div style="display:grid;grid-template-columns:1fr;gap:1.25rem;margin-bottom:3rem">
-  -->
-    <!-- ITEM -->
-<!--
-    <div class="reveal" style="background:rgba(109,190,46,0.05);border:1px solid rgba(109,190,46,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;transition:background 0.3s"
-      onmouseover="this.style.background='rgba(109,190,46,0.1)'"
-      onmouseout="this.style.background='rgba(109,190,46,0.05)'">
-
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--blanco);font-weight:700;margin-bottom:0.3rem">
-          Nombre del cóctel
-        </div>
-        <div style="font-size:13px;color:rgba(244,240,230,0.55);line-height:1.6">
-          Descripción del cóctel
-        </div>
-      </div>
-
-      <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);font-weight:700;white-space:nowrap">
-        $0.00
-      </div>
-
-    </div>
-  
-  </div>
-</div>
--->
   </div>
 </section>
 
@@ -711,13 +321,19 @@ footer{background:var(--tierra2);border-top:1px solid rgba(109,190,46,0.15);padd
   <div class="redes-tag reveal">Siguenos</div>
   <h2 class="redes-title reveal">Estamos en redes</h2>
   <div class="redes-btns reveal">
-    <a href="https://www.facebook.com/profile.php?id=100055254319155" class="red-btn red-fb">
+    <a href="https://www.facebook.com/profile.php?id=61584140036287&rdid=ZI7DH8U31WU71saa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1B4tSppzra%2F#" class="red-btn red-fb">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
       Facebook
     </a>
     <a href="https://www.tiktok.com/@bamboo.restobar?_r=1&_t=ZS-95GukHIeQQX" class="red-btn red-tt">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
       TikTok
+    </a>
+    <a href="https://www.instagram.com/bamboo.restobar?igsh=a3ViZHNoaHlzdXEy" target="_blank" class="red-btn red-ig">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5C18.321 4 20 5.679 20 7.75v8.5c0 2.071-1.679 3.75-3.75 3.75h-8.5C5.679 20 4 18.321 4 16.25v-8.5C4 5.679 5.679 4 7.75 4zm8.75 1.5a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+      </svg>
+    Instagram
     </a>
   </div>
 </section>
